@@ -1,12 +1,9 @@
 name: LabC
 
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+on: [push]
 jobs:
-  build:
+  build-and-run:
+    name: Build and Run
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
